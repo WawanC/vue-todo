@@ -14,8 +14,8 @@
       <div class="mainBox">
         <h1>Vue Todo App</h1>
         <div>
-          <input type="text" />
-          <button>Add Todo</button>
+          <input type="text" v-model="enteredTodoValue" />
+          <button @click="addTodo">Add Todo</button>
         </div>
         <p>There are no todos yet.</p>
       </div>
