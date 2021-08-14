@@ -17,7 +17,10 @@
           <input type="text" v-model="enteredTodoValue" />
           <button @click="addTodo">Add Todo</button>
         </div>
-        <p>There are no todos yet.</p>
+        <p v-if="todos.length === 0">There are no todos yet.</p>
+        <ul v-else>
+          <li v-for="todo in todos" :key="todo">{{ todo }}</li>
+        </ul>
       </div>
     </div>
   </body>
