@@ -21,3 +21,24 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+.mainBox h1 {
+  font-size: 30pt;
+}
+
+.mainBox p {
+  font-size: 16pt   ;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.inputBox {
+  font-size: 16pt;
+}
+
+.addButton {
+  font-size: 16pt;
+}

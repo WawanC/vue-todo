@@ -13,9 +13,9 @@
     <div id="app">
       <div class="mainBox">
         <h1>Vue Todo App</h1>
-        <div>
-          <input type="text" v-model="enteredTodoValue" />
-          <button @click="addTodo">Add Todo</button>
+        <div class='inputContainer'>
+          <input type="text" v-model="enteredTodoValue" class="inputBox" />
+          <button @click="addTodo" class="addButton">Add Todo</button>
         </div>
         <p v-if="todos.length === 0">There are no todos yet.</p>
         <ul v-else>
