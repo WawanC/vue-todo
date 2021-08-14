@@ -7,7 +7,10 @@ const app = Vue.createApp({
   },
   methods: {
     addTodo() {
-      this.todos.push(this.enteredTodoValue);
+      if (this.enteredTodoValue.trim().length === 0) {
+        return;
+      }
+      this.todos.push(this.enteredTodoValue.trim());
       this.enteredTodoValue = "";
     },
     removeTodo(idx) {
