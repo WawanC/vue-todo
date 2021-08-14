@@ -10,6 +10,9 @@ const app = Vue.createApp({
       this.todos.push(this.enteredTodoValue);
       this.enteredTodoValue = "";
     },
+    removeTodo(idx) {
+      this.todos.splice(idx, 1);
+    },
   },
 });
 
