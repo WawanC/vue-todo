@@ -13,16 +13,21 @@
     <div id="app">
       <div class="mainBox">
         <h1>Vue Todo App</h1>
-        <div class='inputContainer'>
+        <div class="inputContainer">
           <input type="text" v-model="enteredTodoValue" class="inputBox" />
           <button @click="addTodo" class="addButton">Add Todo</button>
         </div>
         <p v-if="todos.length === 0">There are no todos yet.</p>
-        <ul v-else>
-          <li v-for="(todo, idx) in todos" :key="todo" @click="removeTodo(idx)">
+        <div class="todoBox">
+          <div
+            class="todoItem"
+            v-for="(todo, idx) in todos"
+            :key="todo"
+            @click="removeTodo(idx)"
+          >
             {{ todo }}
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>

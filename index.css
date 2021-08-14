@@ -27,7 +27,7 @@ body {
 }
 
 .mainBox p {
-  font-size: 16pt   ;
+  font-size: 16pt;
 }
 
 .inputContainer {
@@ -41,4 +41,26 @@ body {
 
 .addButton {
   font-size: 16pt;
+}
+
+.todoBox {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todoItem {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16pt;
+  border: 1px solid black;
+  border-radius: 10px;
+  list-style: none;
+  font-weight: lighter;
+}
+
+.todoItem:hover {
+  background-color: #ccc;
 }
